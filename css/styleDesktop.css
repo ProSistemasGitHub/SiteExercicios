@@ -1,0 +1,79 @@
+body{
+  background: #f9f9f9;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#principal{
+
+  align-content: center;
+}
+
+#menu{
+  position: absolute;
+  border: 1px solid red;
+  height: 70px;
+  top: 530px;
+  left: 405px;
+  padding: 20px;
+}
+
+#conteudo{
+  background-color: #f9f9f9;
+  padding: 20px;  
+}
+
+.centralizar{
+  text-align: center;
+}
+
+.titulo-central{
+  text-align: center;
+  color: #000;
+  font-size: 15px;
+}
+
+.img-Campanha{
+  border: 10px solid #c3c3ae;
+}
+
+#rodape{
+  background: #0059e1;
+  color: #fff;
+}
+
+.msg-topo{
+  position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 43px;
+  color:#fff;
+  top: 280px;
+  left: 400px;
+  line-height: 0px;  
+  font-weight: bold;
+}
+
+.msg-topo2{
+  position: absolute;
+  font-family: 'Montserrat', Sans-serif;
+  font-size: 15px;
+  color: #fff;
+  top: 305px;
+  left: 500px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.botao-Menu{
+  color: #323232;
+  font-size: 15px;
+}
+
+h1{
+  font-size: 1.2em;
+}
+
+a{
+  color: #4b566a;
+  text-decoration: none;
+  padding: 5px;
+}
