@@ -1,90 +1,170 @@
 body{
-  background: #fff;
+  background: #f9f9f9;
   font-family: 'Open Sans', sans-serif;
 }
 
-#principal{
-  
-   
+#principal{  
+  width:100%;   
+}
+
+#topo{
+  height: 95px;
+  background: #fff;
+}
+
+.class-topo-logo{
+  position: relative;
+  top: 20px;
+  left: 200px;
+}
+
+.class-topo-botao{
+  position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  color:#323232;
+  font-weight: bold;
+  left: 1000px;
+  top: 50px;
 }
 
 #menu{
   position: absolute;
-  border: 1px solid red; 
-  height: 70px;
-  top: 490px;
-  left: 650px;
+  border: 1px solid blue; 
+  height: 90px;
+  top: 560px;
+  left: 400px;
   padding: 10px;
 }
 
 #conteudo{
   margin-top: 100px;
   background-color: #f9f9f9; 
-
-}
-
-.bloco-titulo{
-  text-align: center;
-  color: #323232;
-  font-size: 20px;
-  font-weight:bold;
-}
-
-.msg-topo{
-  position: absolute;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 43px;
-  color:#fff;
-  top: 280px;
-  left: 33%;
-  line-height: 0px;  
-  font-weight: bold;
-}
-
-.msg-topo2{
-  position: absolute;
-  font-family: 'Montserrat', Sans-serif;
-  font-size: 15px;
-  color: #fff;
-  top: 305px;
-  left: 33%;
-  text-align: center;
-  font-weight: bold;
-}
-
-.botao-Menu{
-  color: #323232;
-  font-size: 15px;
 }
 
 #rodape{
   background: #0059e1;
-  color: #fff;
-  height: 220px;
+  color: #f9f9f9;
+  height: 220px;  
 }
 
-.titulo-rodape{
-  font-size: 14px;
+#banner{
+
+}
+
+.class-topo1{
+  position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 43px;
+  color:#f9f9f9;
+  top: 270px;
+  left: 430px;
+  line-height: 0px;  
+  font-weight: bold;
+}
+
+.class-topo2{
+  position: absolute;
+  font-family: 'Montserrat', Sans-serif;
+  font-size: 15px;
+  color: #f9f9f9;
+  top: 300px;
+  left: 515px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#bloco-sessao{
+
+}
+
+.class-bloco-titulo{
+  font-family: 'Montserrat', Sans-serif;
+  text-align: center;
+  color: #000;
+  font-size: 28px;
+  font-weight:bold;
+}
+
+.class-bloco-exercicio{
+  border-radius: 20px;
+  background: #fff;
+  border: 1px solid #d1d0d0; 
+  width: 240px;
+  height: 260px;
+}
+
+.class-bloco-tag{
+  position:relative;  
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-family: 'Montserrat', Sans-serif;  
+  background: #0059e1;
+  top: 20px;
+  width: 50px;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+}
+
+.class-bloco-img{
+  position: relative;
+  top: 0px;
+  left: 30px;
+}
+
+.class-bloco-NomeExercicio{
+  position: relative;
+  font-family: 'Montserrat', Sans-serif;
+  text-align: center;
+  color: #000;
+  font-size: 15px;
+  font-weight:bold;
+  top: 110px;
+}
+
+#class-bloco-rodape{
+  position: relative;
+  font-weight: bold;
+  height: 20px;
+  padding: 5px;
+}
+
+.class-bloco-musculo{
+  position: absolute;
+  background: rgb(191, 238, 252);
+  color: #0066cc;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  color:#323232;
+  font-weight: bold;
+}
+
+.class-botao-Menu{
+  color: #323232;
+  font-size: 15px;
+}
+
+.titulo-rodape{font-size: 14px; 
   text-align: left;
-  padding-top: 50px;
+  padding-top: 50px; 
   margin-left: 200px;
 }
 
-.texto-rodape{
-  font-size: 12px; 
+.texto-rodape{font-size: 12px; 
   text-align: left; 
-  padding-top: 10px;
+  padding-top: 10px; 
   margin-left: 200px;
 }
 
 .logoSCA{
   position: relative;
   top: -120px;
-  left: 1600px;
+  left: 1200px;
 }
 
 a{
   color: #2c2e31; 
   text-decoration: none;
-   padding: 5px;
+  padding: 5px;
 }
