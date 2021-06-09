@@ -3,59 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <title>Exercicíos</title>
-  <link rel="stylesheet" href="/css/styleDesktop.css">
+  <link rel="stylesheet" href="./css/styleDesktop.css">
 </head>
 <body>
-  <div id="principal">           <!--Inicio do Principal-->
-    <div id="topo">              <!--Inicio do Topo-->  
-      <div class="class-topo-logo">
-        <img src="/imagens/LogoSCA_Azul.png">
-      </div>  
-
-      <div class="class-topo-botao">     
-        <a href="index.html" class="class-botao-topo">NOVOS ECERCÍCIOS</a>  
-        <a href="index.html" class="class-botao-topo">MAIS ACESSADOS</a>  
-        <a href="index.html" class="class-botao-topo">SUGESTÕES</a> 
-      </div>
-    </div>                        <!--Fim do Topo--> 
+  <div id="principal"><!--Inicio do Principal-->
     
+    <header id="header"><!--Inicio do Topo-->
+      <img id="logo" src="./imagens/LogoSCA_Azul.png" alt="">
+      <nav id="nav">
+        <ul id="menu-topo">  
+          <li><a class="class-btn-Menu" href="/">NOVOS ECERCÍCIOS</a></li>  
+          <li><a class="class-btn-Menu" href="/">MAIS ACESSADOS</a></li> 
+          <li><a class="class-btn-Menu" href="/">SUGESTÕES</a></li> 
+        </ul>          
+      </nav>
+    </header><!--Fim do Topo-->    
 
-    <div id="banner">
-      <img src="/imagens/Capa.png">
+    <div class="banner"><!--Inicio do Banner-->       
+      <img src="./imagens/Capa2.png" class="img-banner">
       <div class="class-topo1">EXERCÍCIOS FÍSICOS GRÁTIS</div>  
-      <div class="class-topo2">Conheça mais de 400 exercícios para adicionar a sua rotina</div>      
-    </div>
-
+      <div class="class-topo2">Conheça mais de 400 exercícios para adicionar a sua rotina.</div>
+      <div id="busca">
+        <div id="divBusca">
+          <input type="text" id="txtBusca" placeholder="Pesquise o exercício desejado aqui"/>
+          <img src="./imagens/lupa.png" alt="Buscar..." id="btnBusca"/>
+        </div> 
+      </div>  
+    </div><!--Fim do Banner-->
     
-    <div id="menu">               <!--Inicio do menu-->
-      <a href="index.html" class="class-botao-Menu">Musculação</a>
-      <a href="index.html" class="class-botao-Menu">Musculação</a>
-      <a href="index.html" class="class-botao-Menu">Musculação</a>
-      <a href="index.html" class="class-botao-Menu">Musculação</a>
-      <a href="index.html" class="class-botao-Menu">Musculação</a>
-      <a href="index.html" class="class-botao-Menu">Musculação</a>                              
-      <a href="index.html" class="class-botao-Menu">Musculação</a>
-    </div>                        <!--Fim do Menu-->
-
+    <div id="menu-principal"><!--Inicio do menu-->
+      <nav id="menu-centro">
+        <div class="class-botao-Menu">
+          <div class="class-btn-redondo"></div>
+          <a href="/">Musculação</a>
+        </div>
+      </nav>
+    </div><!--Fim do Menu-->    
     
-    <div id="conteudo">           <!--Fim do conteudo-->
-      <div id="bloco-sessao">
+    <div id="conteudo"><!--Fim do conteudo-->
+      <div id="bloco-sessao">        
         <div class="class-bloco-titulo">Últimos adicionados</div>
         <div class="class-bloco-exercicio">
-          <div class="class-bloco-tag">NOVO</div>
-          <div class="class-bloco-img"><img src="/imagens/LogoSCA_Azul.png"></div>
-          <div class="class-bloco-NomeExercicio">Supino reto na barra</div>
-          <div id="class-bloco-rodape">
-            <div class="class-bloco-musculo">Peito</div>
-            <div class="class-bloco-musculo">Costas</div>
-            <div class="class-bloco-musculo">Pernas</div>
-          </div>
-        </div>
+          <ul>
+            <li>
+              <div class="class-bloco-tag">NOVO</div>
+              <div class="class-bloco-img"><img src="./imagens/gif.png"></div>
+              <div class="class-bloco-NomeExercicio">Rotação dos Ombros</div>
+              <div id="bloco-rodape">
+                <a class="class-bloco-musculo">Supraespinhal</a>
+                <a class="class-bloco-musculo">Infraespinhal</a>
+                <a class="class-bloco-musculo">Deltoide</a>
+              </div> 
+            </li>
+        
+          </ul>
+        </div>                  
       </div>
-    </div>                        <!--Fim do conteudo-->
+    </div><!--Fim do conteudo-->
 
-
-    <div id="rodape">             <!--Inicio do rodape-->
+    <div id="rodape"><!--Inicio do rodape-->
       <div class="titulo-rodape"><strong>EXERCÍCIOS FÍSICOS</strong></div>
       <div class="texto-rodape">
         Este site foi desenvolvido pelo <strong>Sistema SCA</strong> e pode ser usado de forma não comercial.<br>
@@ -64,7 +70,7 @@
         Acesse: <strong>wwww.sistemasca.com</strong>
       </div>
       <img src="/imagens/logoSCA.png" class="logoSCA">
-    </div>                        <!--Fim do rodapé-->
-  </div>                          <!--Fim do Principal-->
+    </div><!--Fim do rodapé-->
+  </div><!--Fim do Principal-->
 </body>
 </html>
