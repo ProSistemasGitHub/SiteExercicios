@@ -64,7 +64,8 @@ body {
   width: 100%;
 }
 
-#header {
+#topo {
+  position: absolute;
   border: var(--lg-brd) solid var(--cor-brd);
   box-sizing: border-box;
   height: 97px;
@@ -72,19 +73,44 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
 }
 
-#header img {
+#topo-branco {
+  position: absolute;
   border: var(--lg-brd) solid var(--cor-brd);
-  display: block;
-  padding: 10rem;
+  box-sizing: border-box;
+  height: 97px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #fff;
+}
+
+#logo{
+  height: 40px;
+  color: #FFFFFF; 
+  display: flex; 
+  left: 100px;
+}
+
+.class-logo-img {
+  text-align: center;
+}
+
+.class-logo-nome {
+  position: absolute;
+  color: #Fafafa; 
+  left: 70px;  
+  top:37px;
 }
 
 #menu-topo {
   border: var(--lg-brd) solid var(--cor-brd);
   display: flex;
   list-style: none;
-  gap: .5rem;
 }
 
 #menu-principal {
@@ -97,20 +123,35 @@ body {
 #menu-centro {
   display: flex;
   border: var(--lg-brd) solid var(--cor-brd);
-  display: block;
   margin: auto;
   list-style: none;
   height: 100%;
   width: 100%;
   top: 30px;
+  align-items: center;
+  position: relative;
+  top: 10px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#menu-por{
+  display: flex;
+  width: 170px;
+}
+
+.menu-por-descricao{
+  position: relative;
+  color:var(--cor-exer-cinza1);
+  font-size: 12px;
+  font-weight: 600;
+
 }
 
 .class-botao-Menu {
-  display: flex;
   border: var(--lg-brd) solid var(--cor-brd);
   font-size: 15px;
-  font-family: Montserrat, Sans-serif;
-  color: var(--cor-exer-preto);
   width: 100px;
   display: block;
   margin: auto;
@@ -120,33 +161,72 @@ body {
 
 .class-btn-redondo {
   position: relative;
-  border: 3px solid var(--cor-branco);
-  padding: 15px;
+  border: 2px solid var(--cor-branco);
+  padding: 2px;
   align-items: center;
   background-color: var(--cor-exer-azul);
-  border-top-left-radius: 50%;
-  border-top-right-radius: 50%;
-  border-bottom-left-radius: 50%;
-  border-bottom-right-radius: 50%;
-  width: 90px;
-  height: 90px;
-  left: 8px;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  left: 15px;
+}
+
+.class-btn-redondo-Label{
+  font-size: 13px;  
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif; 
+  color: #000000;
 }
 
 .img-botao-icones {
   position: relative;
-  top: 15px;
+  top: 14px;
 }
 
 .class-btn-Menu {
   border: var(--lg-brd) solid var(--cor-brd);
-  font-size: 12px;
-  font-family: Montserrat, Sans-serif;
-  font-weight: bold;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--cor-branco);
+  height: 300px;
+}
+
+.class-btn-Menu-preto {
+  border: var(--lg-brd) solid var(--cor-brd);
+  font-size: 13px;
+  font-weight: 500;
   color: var(--cor-exer-preto);
   height: 300px;
 }
 
+.link-titulo-branco{
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.link-titulo-preto{
+  color: var(--cor-exer-preto);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500; 
+}
+
+.banner-branco{
+  border: var(--lg-brd) solid var(--cor-brd);  
+  background-color: #fff;
+  height: 90px;;
+}
+
+
+
+
+
+
+
+
+/**Campo de busca**/
 #busca {
   border: var(--lg-brd) solid var(--cor-brd);
   position: absolute;
@@ -154,7 +234,7 @@ body {
   align-items: center;
   width: 100%;
   height: 62px;
-  top: 370px;
+  top: 345px;
 }
 
 #divBusca {
@@ -164,10 +244,7 @@ body {
   position: relative;
   align-items: center;
   background-color: var(--cor-branco);
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
+  border-radius: 30px;
   width: 523px;
   height: 62px;
 }
@@ -177,11 +254,10 @@ body {
   float: left;
   background-color: transparent;
   padding-left: 5px;
-  font-size: 15px;
+  font-size: 14px;
   border: none;
   height: 55px;
   width: 445px;
-  font-family: Montserrat, Sans-serif;
   color: var(--cor-exer-cinza1);
   padding-left: 20px;
 }
@@ -205,10 +281,16 @@ body {
   height: 25px;
 }
 
+
+
+
+
+
+
+
 #conteudo {
   border: var(--lg-brd) solid var(--cor-brd);
   margin-bottom: 100px;
-  width: 100%;
 }
 
 .img-banner {
@@ -220,10 +302,9 @@ body {
   border: var(--lg-brd) solid var(--cor-brd);
   position: absolute;
   text-align: center;
-  font-family: Montserrat, 'sans-serif';
   font-size: 45px;
   color: var(--cor-branco);
-  top: 288px;
+  top: 270px;
   width: 100%;
   line-height: 0;
   font-weight: bold;
@@ -232,25 +313,29 @@ body {
 .class-topo2 {
   border: var(--lg-brd) solid var(--cor-brd);
   position: absolute;
-  font-family: Montserrat, 'condensed';
-  font-size: 18px;
-  color: var(--cor-branco);
-  top: 315px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--cor-fonte-cinza-claro);
+  top: 300px;
   width: 100%;
   text-align: center;
 }
 
 #bloco-sessao{
+  width: 100%;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
+  padding: 10px;
 }
 
-.class-bloco-titulo {
+.class-bloco-titulo{
   border: var(--lg-brd) solid var(--cor-brd);
-  font-family: Montserrat, 'Sans-serif';
   text-align: center;
   color: var(--cor-exer-preto);
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 700;
   padding: 50px;
 }
@@ -258,9 +343,11 @@ body {
 .class-bloco-exercicio {
   border-radius: 10px;
   background: var(--cor-branco);
-  border: 1px solid var(--cor-borda);
   width: 240px;
   height: 260px;
+  -webkit-box-shadow: 0px 10px 38px -23px rgba(97,96,97,1);
+  -moz-box-shadow: 0px 10px 38px -23px rgba(97,96,97,1);
+  box-shadow: 0px 10px 38px -23px rgba(97,96,97,1);
 }
 
 .class-bloco-exercicio ul {
@@ -300,10 +387,9 @@ body {
   border: var(--lg-brd) solid var(--cor-brd);
   position: relative;
   top: 5px;
-  font-family: Montserrat, Sans-serif;
   text-align: center;
   color: var(--cor-exer-preto);
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 700;
 }
 
@@ -311,19 +397,169 @@ body {
   display: flex;
   border: var(--lg-brd) solid var(--cor-brd);
   position: relative;
-  width: 100%;
   top: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
 }
 
 .class-bloco-musculo {
+  font-family: 'Open Sans', sans-serif;   
   border: var(--lg-brd) solid var(--cor-brd);
   background: var(--cor-exer-azul-claro);
   color: var(--cor-exer-azul);
-  border-radius: 4px;
+  border-radius: 5px;
   font-size: 11px;
+  font-weight: 400;
   text-align: center;
   margin: 2px;
+}
+
+
+
+
+
+
+
+
+/**Exercícios mais relevantes **/
+#exercicios-relevantes{
+  background-color: var(--cor-exer-azul);
+}
+
+#titulo-exercicios-relevantes{
+  border: var(--lg-brd) solid var(--cor-brd);
+  position: relative;
+  top: 50px;
+  text-align: center;
+  color: var(--cor-branco);
+  font-size: 24px; 
+  font-weight: 700;
+  height: 120px;
+}
+
+.flex-relevantes{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#bloco-exercicios-relevantes{
+  border: var(--lg-brd) solid var(--cor-brd);  
+  margin-top: 0px;
+}
+
+.container-exercicios-relevantes{
+  border: var(--lg-brd) solid var(--cor-brd);  
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  height: 100px;
+  width: 470px;
+}
+
+.nome-exercicio-relevantes{
+  border: var(--lg-brd) solid var(--cor-brd);  
+  position: relative;
+  top: 5px;
+  color: var(--cor-exer-preto);
+  font-size: 14px;
+  font-weight: 700;
+  top: 32px;
+  left: 30px;
+  width: 340px;
+}
+
+.nome-musculos-relevantes{
+  border: var(--lg-brd) solid var(--cor-brd);  
+  position: relative;
+  top: 5px;
+  font-family: 'Open Sans', sans-serif; 
+  color: var(--cor-exer-azul);
+  top: 36px;
+  left: 30px;
+  width: 340px;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.img-musculos-relevantes{
+  border: var(--lg-brd) solid var(--cor-brd);  
+  position: relative;  
+  height: 80px;
+  width: 80px;
+  left: 370px;
+  top: -22px;
+  align-items: center;
+}
+
+
+
+
+
+
+
+/**Exercícios por gupor muscular**/
+.exercicios-grupo-muscular{
+}
+
+.class-group-grupo-musculares{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; 
+}
+
+.container-grupos-musculares{
+  border-radius: 10px;
+  background: var(--cor-branco);
+  width: 240px;
+  height: 260px;
+  -webkit-box-shadow: 0px 10px 38px -23px rgba(97,96,97,1);
+  -moz-box-shadow: 0px 10px 38px -23px rgba(97,96,97,1);
+  box-shadow: 0px 10px 38px -23px rgba(97,96,97,1);
+
+}
+
+.img-grupos-musculares{
+  position: relative;
+  width: 100%;
+  top: 50px;
+  left: 78px;
+
+}
+
+.nome-musculo-grupos-musculares{
+  width: 100%;
+  text-align: center;
+  position: relative;
+  top: 5px;
+  color: var(--cor-exer-preto);
+  font-size: 14px;
+  font-weight: 700;
+  top: 60px;
+}
+
+
+
+
+
+
+
+
+/**RODAPÉ **/
+#rodape {
+  border: var(--lg-brd) solid var(--cor-brd);
+  background: var(--cor-rodape);
+  color: var(--cor-branco);
+  height: 220px;
 }
 
 .titulo-rodape {
@@ -342,6 +578,13 @@ body {
   margin-left: 200px;
 }
 
+
+
+
+
+
+
+
 .logoSCA {
   border: var(--lg-brd) solid var(--cor-brd);
   position: relative;
@@ -352,7 +595,6 @@ body {
 .class-sugestao{
   border: var(--lg-brd) solid var(--cor-brd);
   align-items: center;
-
 }
 
 #form-contato{
@@ -360,14 +602,13 @@ body {
   align-items: center;
   width: 1000px;
   height: 400px;
-  border-radius: 25px;
+  border-radius: 10px;
   background-color: var(--cor-exer-cinza3);
 }
 
 .logo-contato{
   border: var(--lg-brd) solid var(--cor-brd);  
   align-items: center;
-
 }
 
 .class-titulo-Sugestao{
@@ -385,15 +626,181 @@ body {
 
 }
 
-a {
-  color: var(--cor-fonte);
+a{
   text-decoration: none;
   padding: 5px;
 }
 
-#rodape {
-  border: var(--lg-brd) solid var(--cor-brd);
-  background: var(--cor-rodape);
-  color: var(--cor-branco);
-  height: 220px;
+.traco-azul-claro{
+  height: 20px;
+  background-color: var(--cor-azul-claro);
+}
+
+
+
+
+
+
+
+/**Cabecalho**/
+#cabecalho-pagina{
+  position: relative;
+  background-color: var(--cor-exer-azul);
+  height: 110px;
+}
+
+#cabecalho-pagina-centro{
+  position: relative;
+  top: 20px;
+  background-color: var(--cor-exer-azul);
+  height: 30px;
+  align-items: center;
+  width: 100%;
+}
+
+#cabecalho-itens{
+  display: flex;
+  position: relative;
+  list-style: none;
+  top: 27px;
+  align-items: center;  
+  width: 68%;
+  left: 16%;
+}
+
+.cabecalho-tipo{
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  position: relative;
+}
+
+.cabecalho-seta-maior{
+  font-size: 13px;
+  font-weight: 400;
+  color: #fff;  
+  position: relative;
+  left: 5px;
+  top: 1px;  
+}
+
+.cabecalho-musculo{
+  font-size: 13px;
+  font-weight: 400;
+  color: #fff;
+  position: relative;
+  left: 5px;
+}
+
+.cabecalho-seta-voltar{
+  position: relative;
+  left: 6450%;
+}
+
+.cabecalho-voltar{
+  position: relative;
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff; 
+  left: 1690%;
+}
+
+
+
+
+
+
+
+
+/**Descrição dos exercícios**/
+#descricao-exercicio{
+  background-color: #fff;
+  align-items: center;  
+}
+
+.descricao-direita{
+  position: relative;
+  display: flex;
+  width: 550px;  
+  left: 12%;
+}
+
+#descricao-itens{
+  padding: 70px;
+  position: relative;
+  width: 1000px;
+}
+
+.descricao-titulo{
+  position: relative;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.descricao-descricao{
+  position: relative;
+  margin-top: 15px; 
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.descricao-lista-group{
+  margin-top: 35px;
+  display: flex; 
+}
+
+#descricao-lista-itens{
+  display: block;  
+  width: 190px;
+  height: 45px;
+}
+
+.descricao-redondo{
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: var(--cor-exer-azul-claro);
+
+}
+
+.descricao-img{
+  position: relative;
+  left: 15px;
+  top: 11px;
+}
+
+.descricao-sub-preto{
+  position: relative;
+  font-size: 12px;
+  left: 46px;
+  top: -35px;
+}
+
+.descricao-sub-azul{
+  position: relative;  
+  color: var(--cor-exer-azul);
+  font-size: 13px;
+  font-weight: 600; 
+  left: 46px;
+  top: -37px;    
+}
+
+
+.descricao-subtitulo{
+  position: relative;
+  margin-top: 35px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.descricao-como-realizar{
+  position: relative;
+  margin-top: 15px; 
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.descricao-como-realizar-itens{
+  position: relative;
+  left: 15px;
 }
