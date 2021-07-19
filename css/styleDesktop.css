@@ -48,8 +48,7 @@
   --cor-exer-preto: #212121;
   --cor-exer-cinza1:#747474;
   --cor-exer-cinza2:#dcdcdc;
-  --cor-exer-cinza3:#f9f9f9;    
-
+  --cor-exer-cinza3:#f9f9f9;
 }
 
 body {
@@ -226,6 +225,7 @@ body {
 
 
 
+
 /**Campo de busca**/
 #busca {
   border: var(--lg-brd) solid var(--cor-brd);
@@ -280,6 +280,7 @@ body {
   width: 25px;
   height: 25px;
 }
+
 
 
 
@@ -425,6 +426,7 @@ body {
 
 
 
+
 /**Exercícios mais relevantes **/
 #exercicios-relevantes{
   background-color: var(--cor-exer-azul);
@@ -504,7 +506,9 @@ body {
 
 
 
-/**Exercícios por gupor muscular**/
+
+
+/**Exercícios por grupo muscular**/
 .exercicios-grupo-muscular{
 }
 
@@ -554,6 +558,7 @@ body {
 
 
 
+
 /**RODAPÉ **/
 #rodape {
   border: var(--lg-brd) solid var(--cor-brd);
@@ -577,6 +582,7 @@ body {
   padding-top: 10px;
   margin-left: 200px;
 }
+
 
 
 
@@ -635,6 +641,8 @@ a{
   height: 20px;
   background-color: var(--cor-azul-claro);
 }
+
+
 
 
 
@@ -712,13 +720,15 @@ a{
 
 
 
+
 /**Descrição dos exercícios**/
 #descricao-exercicio{
+  display: flex;
   background-color: #fff;
   align-items: center;  
 }
 
-.descricao-direita{
+.descricao-esquerda{
   position: relative;
   display: flex;
   width: 550px;  
@@ -760,7 +770,6 @@ a{
   width: 40px;
   height: 40px;
   background-color: var(--cor-exer-azul-claro);
-
 }
 
 .descricao-img{
@@ -785,7 +794,6 @@ a{
   top: -37px;    
 }
 
-
 .descricao-subtitulo{
   position: relative;
   margin-top: 35px;
@@ -803,4 +811,9 @@ a{
 .descricao-como-realizar-itens{
   position: relative;
   left: 15px;
+}
+
+#traco-divisor{
+  background-color: red;
+  width: 1px;
 }
